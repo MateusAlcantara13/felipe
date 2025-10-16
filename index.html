@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💉 Calculadora do Felipe</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="photo-container">
+          <img src="imgFelipe.jpeg" alt="Foto do Felipe" class="photo" />
+        </div>
+        <h1>Calculadora do Felipe</h1>
+        <p>40g de carboidrato = 1 unidade de insulina</p>
+      </div>
+
+      <div class="family">
+        <h2>👨‍👩‍👦 A Família do Felipe</h2>
+        <p>
+          Felipe é um menino cheio de alegria, coragem e sonhos! Sua família é o
+          coração do seu cuidado — eles o apoiam, o ensinam e o enchem de amor
+          todos os dias. Ter uma família que o acompanha faz toda diferença: ela
+          é o abraço que dá força e o sorriso que torna cada dia mais doce. 💙
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>🍽️ Adicionar Alimentos</h2>
+        <div class="input-row">
+          <div class="input-group">
+            <label>Nome do Alimento</label>
+            <input
+              type="text"
+              id="foodName"
+              placeholder="Ex: Arroz, Banana, Pão..."
+            />
+          </div>
+          <div class="input-group">
+            <label>Carboidratos (g)</label>
+            <input type="number" id="carbs" placeholder="Ex: 25" step="0.1" />
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="addFood()">
+          ➕ Adicionar
+        </button>
+        <button class="btn btn-secondary" onclick="searchCarbs()">
+          🔍 Pesquisar carboidratos na internet
+        </button>
+        <div class="food-list" id="foodList">
+          <div class="empty-state">Nenhum alimento adicionado ainda 🍎</div>
+        </div>
+      </div>
+
+      <div class="result">
+        <h3>💧 Resultado</h3>
+        <div class="result-total">
+          <div class="result-total-label">Dose de Insulina</div>
+          <div class="result-total-value">
+            <span id="insulinAmount">0.00</span>
+          </div>
+          <div class="result-total-unit">unidades</div>
+        </div>
+        <div class="formula" id="formulaText">
+          Adicione alimentos para calcular, Felipe! 🩵
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>
