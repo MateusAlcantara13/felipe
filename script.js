@@ -1,5 +1,5 @@
 let foods = [];
-      const RATIO = 40;
+      const RATIO = 30;
 
       function addFood() {
         const foodName = document.getElementById("foodName").value.trim();
